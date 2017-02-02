@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>{{ page.title }} - {{ site.title }}</title>
+  <title>{{ page.title }} | {{ site.title }}</title>
   <link rel="stylesheet" type="text/css" href="{{ "/css/style.css" | prepend: site.baseurl }}">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
@@ -21,14 +21,12 @@
           <span class="icon-bar"></span>
         </button>
         <!-- Branding Image -->
-        <a class="navbar-brand" href="/">
-                        Madison
-                    </a>
+        <a class="navbar-brand" href="/">Madison</a>
       </div>
       <div class="collapse navbar-collapse" id="app-navbar-collapse">
         <!-- Right Side Of Navbar -->
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="/documents">Documents</a></li>
+          <li><a href="/documents"><strong>Documents</strong></a></li>
           <li><a href="/pages/about">About</a></li>
           <li><a href="/pages/faq">FAQ</a></li>
           <!-- Authentication Links -->
@@ -38,7 +36,7 @@
             </a>
             <ul class="dropdown-menu" role="menu">
               <li>
-                <a href="/users/settings">Settings</a>
+                <a href="{{ "/users/settings/account.html" | prepend: site.baseurl }}">Settings</a>
               </li>
               <li>
                 <a href="/sponsors">Sponsors</a>
