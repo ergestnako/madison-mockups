@@ -14,15 +14,15 @@ title: 'Account | User Settings'
  <form>
   <div class="form-group">
     <label for="exampleInputFirstName">First Name</label>
-    <input type="text" class="form-control" id="exampleInputFirstName">
+    <input type="text" class="form-control" id="exampleInputFirstName" value="{{ site.user.firstname }}">
   </div>
   <div class="form-group">
     <label for="exampleInputLastName">Last Name</label>
-    <input type="text" class="form-control" id="exampleInputLastName">
+    <input type="text" class="form-control" id="exampleInputLastName" value="{{ site.user.lastname }}">
   </div>
   <div class="form-group">
     <label for="exampleInputEmail">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail">
+    <input type="email" class="form-control" id="exampleInputEmail" value="{{ site.user.email }}">
   </div>
   <hr>
   <button type="submit" class="btn btn-default">Submit</button>
