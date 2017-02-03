@@ -26,7 +26,7 @@
       <div class="collapse navbar-collapse" id="app-navbar-collapse">
         <!-- Right Side Of Navbar -->
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="/documents"><strong>Documents</strong></a></li>
+          <li><a href="{{ "/documents.html" | prepend: site.baseurl }}"><strong>Documents</strong></a></li>
           <li><a href="{{ "/pages/about.html" | prepend: site.baseurl }}">About</a></li>
           <li><a href="{{ "/pages/faq.html" | prepend: site.baseurl }}">FAQ</a></li>
           <!-- Authentication Links -->
@@ -49,12 +49,7 @@
               <li role="separator" class="divider"></li>
 
               <li>
-                <a href="/logout" onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                            Logout                                        </a>
-                <form id="logout-form" action="/logout" method="POST" style="display: none;">
-                  <input type="hidden" name="_token" value="7YSe0MjLU3EYZBIFRgYnoQS7ajuoJIlGkTKpnqKO">
-                </form>
+                <a href="#">Logout</a>
               </li>
             </ul>
           </li>
