@@ -3,6 +3,8 @@ layout: default
 title: 'Featured Documents | Site Administration'
 ---
 
+<script src="https://cdn.rawgit.com/twitter/typeahead.js/588440f6/dist/typeahead.bundle.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/bassjobsen/typeahead.js-bootstrap-css/16095933/typeaheadjs.css">
 <div class="page-header">
   <h1>Site Administration</h1>
 </div>
@@ -10,7 +12,6 @@ title: 'Featured Documents | Site Administration'
   {% include admin_settings_sidebar.html active="featured" %}
 </div>
 <div class="col-md-9">
-
   <table class="table">
     <thead>
       <tr>
@@ -23,30 +24,68 @@ title: 'Featured Documents | Site Administration'
       <tr>
         <td><span class="glyphicon glyphicon-triangle-top btn btn-xs"></span><span class="glyphicon glyphicon-triangle-bottom btn btn-xs"></td>
         <td><a href="#">US Public Participation Playbook</a></td>
-        <td class="text-center"><a href="#" class=""><span class="glyphicon glyphicon-trash btn btn-xs btn-danger"></span></a></td>
+        <td class="text-center"><a href="#"><span class="glyphicon glyphicon-trash btn btn-xs btn-danger"></span></a>
+        </td>
       </tr>
       <tr>
         <td><span class="glyphicon glyphicon-triangle-top btn btn-xs"></span><span class="glyphicon glyphicon-triangle-bottom btn btn-xs"></td>
         <td><a href="#">Array of Things Governance & Privacy Policy</a></td>
-        <td class="text-center"><a href="#" class=""><span class="glyphicon glyphicon-trash btn btn-xs btn-danger"></span></a></td>
+        <td class="text-center"><a href="#"><span class="glyphicon glyphicon-trash btn btn-xs btn-danger"></span></a>
+        </td>
       </tr>
       <tr>
         <td><span class="glyphicon glyphicon-triangle-top btn btn-xs"></span><span class="glyphicon glyphicon-triangle-bottom btn btn-xs"></td>
         <td><a href="#">California Assembly Bill (AB) 2880: State intellectual property</a></td>
-        <td class="text-center"><a href="#" class=""><span class="glyphicon glyphicon-trash btn btn-xs btn-danger"></span></a></td>
+        <td class="text-center"><a href="#"><span class="glyphicon glyphicon-trash btn btn-xs btn-danger"></span></a>
+        </td>
       </tr>
       <tr>
         <td><span class="glyphicon glyphicon-triangle-top btn btn-xs"></span><span class="glyphicon glyphicon-triangle-bottom btn btn-xs"></td>
         <td><a href="#">H. R. 5372 - “The United States Digital Service Act”</a></td>
-        <td class="text-center"><a href="#" class=""><span class="glyphicon glyphicon-trash btn btn-xs btn-danger"></span></a></td>
+        <td class="text-center"><a href="#"><span class="glyphicon glyphicon-trash btn btn-xs btn-danger"></span></a>
+        </td>
       </tr>
       <tr>
         <td><span class="glyphicon glyphicon-triangle-top btn btn-xs"></span><span class="glyphicon glyphicon-triangle-bottom btn btn-xs"></td>
         <td><a href="#">Constitution of the United States</a></td>
-        <td class="text-center"><a href="#" class=""><span class="glyphicon glyphicon-trash btn btn-xs btn-danger"></span></a></td>
+        <td class="text-center"><a href="#"><span class="glyphicon glyphicon-trash btn btn-xs btn-danger"></span></a>
+        </td>
       </tr>
     </tbody>
   </table>
+  <hr>
+  <form class="form-horizontal">
+    <div class="form-group">
+      <div class="input-group">
+        <input type="text" class="form-control typeahead" id="featured-doc-search" placeholder="Feature another document">
+        <span class="input-group-addon"><span class=" glyphicon glyphicon-search"></span></span>
+      </div>
+  </form>
+  <script>
+  var docs = new Bloodhound({
+    datumTokenizer: Bloodhound.tokenizers.whitespace,
+    queryTokenizer: Bloodhound.tokenizers.whitespace,
+    // `states` is an array of state names defined in "The Basics"
+    local: ["BART Open Data Policy",
+      "Naperville Open Data Policy",
+      "California Assembly Bill (AB) 2880: State intellectual property",
+      "H.R.4897 - \"Information Technology Modernization Act\"",
+      "H. R. 5372 - “The United States Digital Service Act”",
+      "Array of Things Governance & Privacy Policy",
+      "The Edicts of Government Amendment",
+      "Digital Campaign Guide",
+      "READ MORE",
+      "Consumer Review Freedom Act"
+    ]
+  });
 
-
+  $('#featured-doc-search').typeahead({
+    hint: true,
+    highlight: true,
+    minLength: 1
+  }, {
+    name: 'documents',
+    source: docs
+  });
+  </script>
 </div>
