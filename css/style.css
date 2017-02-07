@@ -5621,3 +5621,6 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+
+a > i.fa {
+  color: #333333; }
