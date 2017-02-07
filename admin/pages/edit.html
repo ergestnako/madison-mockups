@@ -1,0 +1,102 @@
+---
+layout: default
+title: 'Edit | Custom Pages | Site Administration'
+---
+
+<div class="page-header">
+  <h1>Site Administration</h1>
+</div>
+<div class="col-md-3 list-group">
+  {% include admin_settings_sidebar.html active="pages" %}
+</div>
+<div class="col-md-9">
+  <form method="POST" action="" accept-charset="UTF-8">
+    <div class="form-group">
+      <label for="url" class="control-label">URL</label>
+      <input type="text" class="form-control" name="url" value="/about" id="url">
+    </div>
+    <div class="form-group">
+      <label for="nav_title" class="control-label">Navigation Title</label>
+      <input type="text" class="form-control" name="nav_title" value="About" id="nav_title">
+    </div>
+    <div class="form-group">
+      <label for="page_title" class="control-label">Page Title</label>
+      <input type="text" class="form-control" name="page_title" value="About" id="page_title">
+    </div>
+    <div class="form-group">
+      <label for="header" class="control-label">Page Header</label>
+      <input type="text" class="form-control" name="header" value="About Madison" id="header">
+    </div>
+    <div class="checkbox">
+      <label>
+        <input checked="checked" name="header_nav_link" type="checkbox" value="1">
+        <input name="header_nav_link" type="hidden" value="1"> Show in Header?
+      </label>
+    </div>
+    <div class="checkbox">
+      <label>
+        <input name="footer_nav_link" type="checkbox">
+        <input name="footer_nav_link" type="hidden" value="0"> Show in Footer?
+      </label>
+    </div>
+    <div class="checkbox">
+      <label>
+        <input name="external" type="checkbox">
+        <input name="external" type="hidden" value="0"> External?
+      </label>
+    </div>
+    <div class="form-group">
+      <label for="page_content" class="control-label">Content</label>
+      <textarea class="form-control" name="page_content" cols="50" rows="10" id="page_content">
+
+Madison is a government policy co-creation platform that opens up laws and
+legislation previously off-limits to individuals and the Internet community.
+Launched to battle the Stop Online Piracy Act (SOPA), it has since been used to
+power citizen participation in government policymaking in the United States
+Congress. With Madison, you can access the law as it&#039;s being written, leave
+comments, annotate specific content, and interact with other civic-minded
+participants. Madison brings the lawmaking process straight to you, and gives
+you a say in your government&#039;s decisions.
+
+&lt;iframe id=&quot;tutorial&quot; width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/qfhBO6u-xJY&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+**How it works:**
+
+1. Sign up and create a username.
+1. Verify your email address.
+1. Locate a document by browsing through titles, filtering by sponsor, or searching for keywords.
+1. Annotate, comment on, and support or oppose the document.
+1. Stay connected by signing up for email updates.
+
+When you support or oppose a document, enter a comment, or annotate a specific
+section of a work in progress, the document&#039;s sponsor receives an electronic
+notification. Your interaction with legislation on Madison will provide sponsors
+with valuable feedback on how their constituents feel about proposed
+legislation, and they may even choose to incorporate suggested edits straight
+into their documents.
+
+**What&#039;s next?**
+
+Engage with the community. Madison allows you to interact not only with specific
+pieces of legislation, but with other civic-minded citizens. See what other
+people are saying and share your thoughts. Explore documents from other sponsors
+or legislative bodies. And suggest changes or features you&#039;d like to see on
+Madison by giving us feedback in the tab at the left-hand side of the page, or
+by sending us an email. We&#039;d love to hear from you.
+
+**Coming Soon**
+
+Take a look at our [Github Milestones](https://github.com/opengovfoundation/madison/milestones)
+for the most up to date roadmap on Madison.
+
+Don&#039;t see the improvement you&#039;re looking for?  Open an issue and we&#039;ll respond
+as quickly as possible.
+
+Still have a question? Let by using the feedback button in the lower right hand
+corner.  We&#039;ll get back to you right away.
+      </textarea>
+    </div>
+    <hr>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>

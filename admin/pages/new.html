@@ -1,0 +1,56 @@
+---
+layout: default
+title: 'Custom Pages | Site Administration'
+---
+
+<div class="page-header">
+  <h1>Site Administration</h1>
+</div>
+<div class="col-md-3 list-group">
+  {% include admin_settings_sidebar.html active="pages" %}
+</div>
+<div class="col-md-9">
+  <form method="POST" action="" accept-charset="UTF-8">
+    <div class="form-group">
+      <label for="url" class="control-label">URL</label>
+      <input type="text" class="form-control" name="url" value="" id="url">
+    </div>
+    <div class="form-group">
+      <label for="nav_title" class="control-label">Navigation Title</label>
+      <input type="text" class="form-control" name="nav_title" value="" id="nav_title">
+    </div>
+    <div class="form-group">
+      <label for="page_title" class="control-label">Page Title</label>
+      <input type="text" class="form-control" name="page_title" value="" id="page_title">
+    </div>
+    <div class="form-group">
+      <label for="header" class="control-label">Page Header</label>
+      <input type="text" class="form-control" name="header" value="" id="header">
+    </div>
+    <div class="checkbox">
+      <label>
+        <input name="header_nav_link" type="checkbox" value="">
+        <input name="header_nav_link" type="hidden" value=""> Show in Header?
+      </label>
+    </div>
+    <div class="checkbox">
+      <label>
+        <input name="footer_nav_link" type="checkbox">
+        <input name="footer_nav_link" type="hidden" value=""> Show in Footer?
+      </label>
+    </div>
+    <div class="checkbox">
+      <label>
+        <input name="external" type="checkbox">
+        <input name="external" type="hidden" value=""> External?
+      </label>
+    </div>
+    <div class="form-group">
+      <label for="page_content" class="control-label">Content</label>
+      <textarea class="form-control" name="page_content" cols="50" rows="10" id="page_content">
+      </textarea>
+    </div>
+    <hr>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
