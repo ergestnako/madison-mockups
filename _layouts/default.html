@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>{{ page.title }} | {{ site.title }}</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="{{ "/css/style.css" | prepend: site.baseurl }}">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
@@ -32,7 +33,7 @@
           <!-- Authentication Links -->
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-              <span class="glyphicon glyphicon-user"></span>  {{ site.user.fullname }} <span class="caret"></span>
+              <i class="fa fa-user" aria-hidden="true"></i>  {{ site.user.fullname }} <span class="caret"></span>
             </a>
             <ul class="dropdown-menu" role="menu">
               <li>
