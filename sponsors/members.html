@@ -4,72 +4,26 @@ title: 'Members | Sponsor'
 ---
 
 <div class="page-header">
-  <h1>Sponsor Members</h1>
+  <h1>Sponsor Settings</h1>
 </div>
 <div class="col-md-3 list-group">
   {% include sponsor_settings_sidebar.html active="members" %}
 </div>
 <div class="col-md-9">
-  <div class="modal fade" id="queryModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel">Query</h4>
-        </div>
-        <div class="modal-body">
-          <form method="GET" action="https://dev.mymadison.io/sponsors/1/members" accept-charset="UTF-8">
-            <div class="form-group">
-              <label for="roles[]" class="control-label">Role</label>
-              <select class="form-control" multiple="1" id="roles[]" name="roles[]">
-                <option value="owner">Owner</option>
-                <option value="editor">Editor</option>
-                <option value="staff">Staff</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="order" class="control-label">Order By</label>
-              <select class="form-control" id="order" name="order">
-                <option value="created_at">Created</option>
-                <option value="updated_at">Updated</option>
-                <option value="role">Role</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="order_dir" class="control-label">Order By Direction</label>
-              <select class="form-control" id="order_dir" name="order_dir">
-                <option value="DESC">Descending</option>
-                <option value="ASC">Ascending</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="limit" class="control-label">Limit</label>
-              <select class="form-control" id="limit" name="limit">
-                <option value="10">10</option>
-                <option value="25">25</option>
-                <option value="50">50</option>
-              </select>
-            </div>
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <a href="https://dev.mymadison.io/sponsors/1/members" class="btn btn-default">Clear</a>
-            <button type="submit" class="btn btn-default">Submit</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
   <table class="table">
     <thead>
       <tr>
         <th>Name</th>
+        <th>Email</th>
         <th>Role</th>
         <th>Joined</th>
-        <th>Actions</th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>First Last</td>
+        <td>first.last@example.com</td>
         <td>
           <form method="POST" action="https://dev.mymadison.io/sponsors/1/members/1/role" accept-charset="UTF-8">
             <input name="_method" type="hidden" value="PUT">
@@ -82,20 +36,11 @@ title: 'Members | Sponsor'
           </form>
         </td>
         <td>2017-01-26 20:19:16</td>
-        <td>
-          <div class="btn-toolbar" role="toolbar">
-            <div class="btn-group">
-              <form method="POST" action="https://dev.mymadison.io/sponsors/1/members/1" accept-charset="UTF-8">
-                <input name="_method" type="hidden" value="DELETE">
-                <input name="_token" type="hidden" value="10yd2haWGMDKoQYvPDJaBetL9hk5xXZDXc70nvRB">
-                <button type="submit" class="btn btn-default">Remove</button>
-              </form>
-            </div>
-          </div>
-        </td>
+        <td><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></td>
       </tr>
       <tr>
         <td>John Appleseed</td>
+        <td>john.appleseed@example.com</td>
         <td>
           <form method="POST" action="https://dev.mymadison.io/sponsors/1/members/2/role" accept-charset="UTF-8">
             <input name="_method" type="hidden" value="PUT">
@@ -108,18 +53,12 @@ title: 'Members | Sponsor'
           </form>
         </td>
         <td>2017-01-26 20:19:16</td>
-        <td>
-          <div class="btn-toolbar" role="toolbar">
-            <div class="btn-group">
-              <form method="POST" action="https://dev.mymadison.io/sponsors/1/members/2" accept-charset="UTF-8">
-                <input name="_method" type="hidden" value="DELETE">
-                <input name="_token" type="hidden" value="10yd2haWGMDKoQYvPDJaBetL9hk5xXZDXc70nvRB">
-                <button type="submit" class="btn btn-default">Remove</button>
-              </form>
-            </div>
-          </div>
-        </td>
+        <td><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></td>
       </tr>
     </tbody>
   </table>
+  <hr>
+
+  <a href="{{ "/sponsors/members/add.html" | prepend: site.baseurl }}" class="btn btn-default">Add a User</a>
+
 </div>
