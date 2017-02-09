@@ -1,48 +1,42 @@
 ---
-layout: default
+layout: settings
 title: 'Settings | Sponsor'
+header: 'Sponsor'
+sidebar: "sponsor_settings_sidebar.html"
 ---
 
-<div class="page-header">
-  <h1>Sponsor Settings</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Created</th>
+      <th>Status</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="#">Example Document</a></td>
+      <td>2017-01-26 20:19:16</td>
+      <td>Published</td>
+      <td><a href="{{ "#" | prepend: site.baseurl }}"><i class="fa fa-pencil" aria-hidden="true"></i></a></td>
+      <td><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+    </tr>
+    <tr>
+      <td><a href="#">Second Example Document</a></td>
+      <td>2017-01-26 20:19:16</td>
+      <td>Published</td>
+      <td><a href="{{ "#" | prepend: site.baseurl }}"><i class="fa fa-pencil" aria-hidden="true"></i></a></td>
+      <td><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+    </tr>
+  </tbody>
+</table>
+<div class="text-center">
+  <p>
+    Showing 1 to 2 of 2 entries
+  </p>
 </div>
-<div class="col-md-3 list-group">
-  {% include sponsor_settings_sidebar.html active="documents" %}
-</div>
-<div class="col-md-9">
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Title</th>
-        <th>Created</th>
-        <th>Status</th>
-        <th></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a href="#">Example Document</a></td>
-        <td>2017-01-26 20:19:16</td>
-        <td>Published</td>
-        <td><a href="{{ "#" | prepend: site.baseurl }}"><i class="fa fa-pencil" aria-hidden="true"></i></a></td>
-        <td><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></td>
-      </tr>
-      <tr>
-        <td><a href="#">Second Example Document</a></td>
-        <td>2017-01-26 20:19:16</td>
-        <td>Published</td>
-        <td><a href="{{ "#" | prepend: site.baseurl }}"><i class="fa fa-pencil" aria-hidden="true"></i></a></td>
-        <td><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></td>
-      </tr>
-    </tbody>
-  </table>
-  <div class="text-center">
-    <p>
-      Showing 1 to 2 of 2 entries
-    </p>
-  </div>
 
-  <hr>
+<hr>
 
-  <a href="{{ "# | prepend: site.baseurl }}" class="btn btn-default">New Document</a>
-</div>
+<a href="{{ "# | prepend: site.baseurl }}" class="btn btn-default">New Document</a>

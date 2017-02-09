@@ -1,4 +1,4 @@
 
-<a href="{{ "/sponsors/settings.html" | prepend: site.baseurl }}" class="list-group-item{% if include.active == 'settings' %} active{% endif %}"> Settings</a>
-<a href="{{ "/sponsors/members.html" | prepend: site.baseurl }}" class="list-group-item{% if include.active == 'members' %} active{% endif %}"> Members</a>
-<a href="{{ "/sponsors/documents.html" | prepend: site.baseurl }}" class="list-group-item{% if include.active == 'documents' %} active{% endif %}"> Documents</a>
+<a href="{{ "/sponsors/settings.html" | prepend: site.baseurl }}" class="list-group-item{% if page.path contains 'sponsors/settings' %} active{% endif %}"> Settings</a>
+<a href="{{ "/sponsors/members.html" | prepend: site.baseurl }}" class="list-group-item{% if page.path contains 'sponsors/members' %} active{% endif %}"> Members</a>
+<a href="{{ "/sponsors/documents.html" | prepend: site.baseurl }}" class="list-group-item{% if page.path contains 'sponsors/documents' %} active{% endif %}"> Documents</a>

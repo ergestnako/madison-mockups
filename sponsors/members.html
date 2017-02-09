@@ -1,64 +1,58 @@
 ---
-layout: default
+layout: settings
 title: 'Members | Sponsor'
+header: 'Sponsor'
+sidebar: "sponsor_settings_sidebar.html"
 ---
 
-<div class="page-header">
-  <h1>Sponsor Settings</h1>
-</div>
-<div class="col-md-3 list-group">
-  {% include sponsor_settings_sidebar.html active="members" %}
-</div>
-<div class="col-md-9">
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Role</th>
-        <th>Joined</th>
-        <th></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>First Last</td>
-        <td>first.last@example.com</td>
-        <td>
-          <form method="POST" action="https://dev.mymadison.io/sponsors/1/members/1/role" accept-charset="UTF-8">
-            <input name="_method" type="hidden" value="PUT">
-            <input name="_token" type="hidden" value="10yd2haWGMDKoQYvPDJaBetL9hk5xXZDXc70nvRB">
-            <select onchange="if (this.selectedIndex &gt;= 0) this.form.submit();" name="role">
-              <option value="owner" selected="selected">Owner</option>
-              <option value="editor">Editor</option>
-              <option value="staff">Staff</option>
-            </select>
-          </form>
-        </td>
-        <td>2017-01-26 20:19:16</td>
-        <td><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></td>
-      </tr>
-      <tr>
-        <td>John Appleseed</td>
-        <td>john.appleseed@example.com</td>
-        <td>
-          <form method="POST" action="https://dev.mymadison.io/sponsors/1/members/2/role" accept-charset="UTF-8">
-            <input name="_method" type="hidden" value="PUT">
-            <input name="_token" type="hidden" value="10yd2haWGMDKoQYvPDJaBetL9hk5xXZDXc70nvRB">
-            <select onchange="if (this.selectedIndex &gt;= 0) this.form.submit();" name="role">
-              <option value="owner">Owner</option>
-              <option value="editor" selected="selected">Editor</option>
-              <option value="staff">Staff</option>
-            </select>
-          </form>
-        </td>
-        <td>2017-01-26 20:19:16</td>
-        <td><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></td>
-      </tr>
-    </tbody>
-  </table>
-  <hr>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Role</th>
+      <th>Joined</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>First Last</td>
+      <td>first.last@example.com</td>
+      <td>
+        <form method="POST" action="https://dev.mymadison.io/sponsors/1/members/1/role" accept-charset="UTF-8">
+          <input name="_method" type="hidden" value="PUT">
+          <input name="_token" type="hidden" value="10yd2haWGMDKoQYvPDJaBetL9hk5xXZDXc70nvRB">
+          <select onchange="if (this.selectedIndex &gt;= 0) this.form.submit();" name="role">
+            <option value="owner" selected="selected">Owner</option>
+            <option value="editor">Editor</option>
+            <option value="staff">Staff</option>
+          </select>
+        </form>
+      </td>
+      <td>2017-01-26 20:19:16</td>
+      <td><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+    </tr>
+    <tr>
+      <td>John Appleseed</td>
+      <td>john.appleseed@example.com</td>
+      <td>
+        <form method="POST" action="https://dev.mymadison.io/sponsors/1/members/2/role" accept-charset="UTF-8">
+          <input name="_method" type="hidden" value="PUT">
+          <input name="_token" type="hidden" value="10yd2haWGMDKoQYvPDJaBetL9hk5xXZDXc70nvRB">
+          <select onchange="if (this.selectedIndex &gt;= 0) this.form.submit();" name="role">
+            <option value="owner">Owner</option>
+            <option value="editor" selected="selected">Editor</option>
+            <option value="staff">Staff</option>
+          </select>
+        </form>
+      </td>
+      <td>2017-01-26 20:19:16</td>
+      <td><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+    </tr>
+  </tbody>
+</table>
+<hr>
 
-  <a href="{{ "/sponsors/members/add.html" | prepend: site.baseurl }}" class="btn btn-default">Add a User</a>
+<a href="{{ "/sponsors/members/add.html" | prepend: site.baseurl }}" class="btn btn-default">Add a User</a>
 
-</div>

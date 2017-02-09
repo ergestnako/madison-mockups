@@ -1,65 +1,59 @@
 ---
-layout: default
+layout: settings
 title: 'Settings | Sponsor'
+header: 'Sponsor'
+sidebar: "sponsor_settings_sidebar.html"
 ---
 
-<div class="page-header">
-  <h1>Sponsor Settings</h1>
-</div>
-<div class="col-md-3 list-group">
-  {% include sponsor_settings_sidebar.html active="settings" %}
-</div>
-<div class="col-md-9">
-  <form method="POST" action="https://dev.mymadison.io/sponsors/1" accept-charset="UTF-8">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="form-group">
-          <label for="name" class="control-label">Name</label>
-          <input type="text" class="form-control" name="name" value="Example Sponsor" id="name">
-        </div>
+<form method="POST" action="https://dev.mymadison.io/sponsors/1" accept-charset="UTF-8">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="form-group">
+        <label for="name" class="control-label">Name</label>
+        <input type="text" class="form-control" name="name" value="Example Sponsor" id="name">
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-6">
-        <div class="form-group">
-          <label for="address1" class="control-label">Address 1</label>
-          <input type="text" class="form-control" name="address1" value="1234 Somewhere" id="address1">
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="form-group">
-          <label for="address2" class="control-label">Address 2</label>
-          <input type="text" class="form-control" name="address2" id="address2">
-        </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="address1" class="control-label">Address 1</label>
+        <input type="text" class="form-control" name="address1" value="1234 Somewhere" id="address1">
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-3">
-        <div class="form-group">
-          <label for="city" class="control-label">City</label>
-          <input type="text" class="form-control" name="city" value="City" id="city">
-        </div>
-      </div>
-      <div class="col-md-2">
-        <div class="form-group">
-          <label for="state" class="control-label">State</label>
-          <input type="text" class="form-control" name="state" value="DC" id="state">
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="form-group">
-          <label for="postal_code" class="control-label">Zip Code</label>
-          <input type="text" class="form-control" name="postal_code" value="12345" id="postal_code">
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="form-group">
-          <label for="phone" class="control-label">Phone Number</label>
-          <input type="text" class="form-control" name="phone" value="555-555-5555" id="phone">
-        </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="address2" class="control-label">Address 2</label>
+        <input type="text" class="form-control" name="address2" id="address2">
       </div>
     </div>
-    <hr>
-    <button type="submit" class="btn btn-default">Submit</button>
-  </form>
-</div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="form-group">
+        <label for="city" class="control-label">City</label>
+        <input type="text" class="form-control" name="city" value="City" id="city">
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="form-group">
+        <label for="state" class="control-label">State</label>
+        <input type="text" class="form-control" name="state" value="DC" id="state">
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="form-group">
+        <label for="postal_code" class="control-label">Zip Code</label>
+        <input type="text" class="form-control" name="postal_code" value="12345" id="postal_code">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-group">
+        <label for="phone" class="control-label">Phone Number</label>
+        <input type="text" class="form-control" name="phone" value="555-555-5555" id="phone">
+      </div>
+    </div>
+  </div>
+  <hr>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
