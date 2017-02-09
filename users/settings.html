@@ -1,29 +1,23 @@
 ---
-layout: default
+layout: settings
 title: 'Account | User Settings'
+header: 'User Settings'
+sidebar: "user_settings_sidebar.html"
 ---
 
-<div class="page-header">
-  <h1>Settings</h1>
-</div>
-<div class="col-md-3 list-group">
-  {% include user_settings_sidebar.html active="settings" %}
-</div>
-<div class="col-md-9">
-  <form>
-    <div class="form-group">
-      <label for="exampleInputFirstName">First Name</label>
-      <input type="text" class="form-control" id="exampleInputFirstName" value="{{ site.user.firstname }}">
-    </div>
-    <div class="form-group">
-      <label for="exampleInputLastName">Last Name</label>
-      <input type="text" class="form-control" id="exampleInputLastName" value="{{ site.user.lastname }}">
-    </div>
-    <div class="form-group">
-      <label for="exampleInputEmail">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail" value="{{ site.user.email }}">
-    </div>
-    <hr>
-    <button type="submit" class="btn btn-default">Submit</button>
-  </form>
-</div>
+<form>
+  <div class="form-group">
+    <label for="exampleInputFirstName">First Name</label>
+    <input type="text" class="form-control" id="exampleInputFirstName" value="{{ site.user.firstname }}">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputLastName">Last Name</label>
+    <input type="text" class="form-control" id="exampleInputLastName" value="{{ site.user.lastname }}">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail" value="{{ site.user.email }}">
+  </div>
+  <hr>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
