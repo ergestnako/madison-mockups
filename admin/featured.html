@@ -1,86 +1,80 @@
 ---
-layout: default
+layout: settings
 title: 'Featured Documents | Site Admin'
+header: 'Site Admin'
+sidebar: "admin_settings_sidebar.html"
 ---
 
 <script src="https://cdn.rawgit.com/twitter/typeahead.js/588440f6/dist/typeahead.bundle.js"></script>
 <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/bassjobsen/typeahead.js-bootstrap-css/16095933/typeaheadjs.css">
-<div class="page-header">
-  <h1>Site Admin</h1>
-</div>
-<div class="col-md-3 list-group">
-  {% include admin_settings_sidebar.html active="featured" %}
-</div>
-<div class="col-md-9">
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Order</th>
-        <th>Page</th>
-        <th>&nbsp;</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a href="#"><i class="fa fa-caret-up fa-lg" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-caret-down fa-lg" aria-hidden="true"></i></a></td>
-        <td><a href="#">US Public Participation Playbook</a></td>
-        <td><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></td>
-      </tr>
-      <tr>
-        <td><a href="#"><i class="fa fa-caret-up fa-lg" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-caret-down fa-lg" aria-hidden="true"></i></a></td>
-        <td><a href="#">Array of Things Governance & Privacy Policy</a></td>
-        <td><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></td>
-      </tr>
-      <tr>
-        <td><a href="#"><i class="fa fa-caret-up fa-lg" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-caret-down fa-lg" aria-hidden="true"></i></a></td>
-        <td><a href="#">California Assembly Bill (AB) 2880: State intellectual property</a></td>
-        <td><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></td>
-      </tr>
-      <tr>
-        <td><a href="#"><i class="fa fa-caret-up fa-lg" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-caret-down fa-lg" aria-hidden="true"></i></a></td>
-        <td><a href="#">H. R. 5372 - “The United States Digital Service Act”</a></td>
-        <td><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></td>
-      </tr>
-      <tr>
-        <td><a href="#"><i class="fa fa-caret-up fa-lg" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-caret-down fa-lg" aria-hidden="true"></i></a></td>
-        <td><a href="#">Constitution of the United States</a></td>
-        <td><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></td>
-      </tr>
-    </tbody>
-  </table>
-  <hr>
-  <form class="form-horizontal">
-    <div class="form-group">
-      <div class="input-group">
-        <input type="text" class="form-control typeahead" id="featured-doc-search" placeholder="Feature another document">
-        <span class="input-group-addon"><i class="fa fa-search" aria-hidden="true"></i></span>
-      </div>
-  </form>
-  <script>
-  var docs = new Bloodhound({
-    datumTokenizer: Bloodhound.tokenizers.whitespace,
-    queryTokenizer: Bloodhound.tokenizers.whitespace,
-    // `states` is an array of state names defined in "The Basics"
-    local: ["BART Open Data Policy",
-      "Naperville Open Data Policy",
-      "California Assembly Bill (AB) 2880: State intellectual property",
-      "H.R.4897 - \"Information Technology Modernization Act\"",
-      "H. R. 5372 - “The United States Digital Service Act”",
-      "Array of Things Governance & Privacy Policy",
-      "The Edicts of Government Amendment",
-      "Digital Campaign Guide",
-      "READ MORE",
-      "Consumer Review Freedom Act"
-    ]
-  });
+<table class="table">
+  <thead>
+    <tr>
+      <th>Order</th>
+      <th>Page</th>
+      <th>&nbsp;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="#"><i class="fa fa-caret-up fa-lg" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-caret-down fa-lg" aria-hidden="true"></i></a></td>
+      <td><a href="#">US Public Participation Playbook</a></td>
+      <td><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+    </tr>
+    <tr>
+      <td><a href="#"><i class="fa fa-caret-up fa-lg" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-caret-down fa-lg" aria-hidden="true"></i></a></td>
+      <td><a href="#">Array of Things Governance & Privacy Policy</a></td>
+      <td><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+    </tr>
+    <tr>
+      <td><a href="#"><i class="fa fa-caret-up fa-lg" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-caret-down fa-lg" aria-hidden="true"></i></a></td>
+      <td><a href="#">California Assembly Bill (AB) 2880: State intellectual property</a></td>
+      <td><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+    </tr>
+    <tr>
+      <td><a href="#"><i class="fa fa-caret-up fa-lg" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-caret-down fa-lg" aria-hidden="true"></i></a></td>
+      <td><a href="#">H. R. 5372 - “The United States Digital Service Act”</a></td>
+      <td><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+    </tr>
+    <tr>
+      <td><a href="#"><i class="fa fa-caret-up fa-lg" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-caret-down fa-lg" aria-hidden="true"></i></a></td>
+      <td><a href="#">Constitution of the United States</a></td>
+      <td><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+<form class="form-horizontal">
+  <div class="form-group">
+    <div class="input-group">
+      <input type="text" class="form-control typeahead" id="featured-doc-search" placeholder="Feature another document">
+      <span class="input-group-addon"><i class="fa fa-search" aria-hidden="true"></i></span>
+    </div>
+</form>
+<script>
+var docs = new Bloodhound({
+  datumTokenizer: Bloodhound.tokenizers.whitespace,
+  queryTokenizer: Bloodhound.tokenizers.whitespace,
+  // `states` is an array of state names defined in "The Basics"
+  local: ["BART Open Data Policy",
+    "Naperville Open Data Policy",
+    "California Assembly Bill (AB) 2880: State intellectual property",
+    "H.R.4897 - \"Information Technology Modernization Act\"",
+    "H. R. 5372 - “The United States Digital Service Act”",
+    "Array of Things Governance & Privacy Policy",
+    "The Edicts of Government Amendment",
+    "Digital Campaign Guide",
+    "READ MORE",
+    "Consumer Review Freedom Act"
+  ]
+});
 
-  $('#featured-doc-search').typeahead({
-    hint: true,
-    highlight: true,
-    minLength: 1
-  }, {
-    name: 'documents',
-    source: docs
-  });
-  </script>
-</div>
+$('#featured-doc-search').typeahead({
+  hint: true,
+  highlight: true,
+  minLength: 1
+}, {
+  name: 'documents',
+  source: docs
+});
+</script>
