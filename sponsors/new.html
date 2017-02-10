@@ -1,0 +1,18 @@
+---
+layout: default
+title:  'New | My Sponsors'
+---
+
+<h1>Create a New Sponsor</h1>
+<div class="row">
+  <div class="col-md-6">
+    <p class="lead">Sponsors are individuals and organizations that want to share a document with the public and hear their opinions using {{site.title}}. Add the public's voice and credibility to your proposal.</p>
+    <p>Completing this form will submit your request to the {{site.title}} administrators to authorize your sponsor account. You will be contacted within two business days to verify your request.</p>
+    <p><a href="{{ " /become-a-sponsor.html " | prepend: site.baseurl }}">Learn more</a></p>
+  </div>
+  <div class="col-md-6">
+    {% include sponsor-form.html %}
+    <hr>
+	<a href="{{ "/sponsors/new-thanks.html " | prepend: site.baseurl }}" class="btn btn-primary">Create Sponsor</a>
+  </div>
+</div>
