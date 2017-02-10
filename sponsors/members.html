@@ -17,8 +17,8 @@ sidebar: "sponsor_settings_sidebar.html"
   </thead>
   <tbody>
     <tr>
-      <td>First Last</td>
-      <td>first.last@example.com</td>
+      <td>{{site.user.fullname}}</td>
+      <td>{{site.user.email}}</td>
       <td>
         <form method="POST" action="https://dev.mymadison.io/sponsors/1/members/1/role" accept-charset="UTF-8">
           <input name="_method" type="hidden" value="PUT">
@@ -35,7 +35,7 @@ sidebar: "sponsor_settings_sidebar.html"
     </tr>
     <tr>
       <td>John Appleseed</td>
-      <td>john.appleseed@example.com</td>
+      <td>john.appleseed@wichita.gov</td>
       <td>
         <form method="POST" action="https://dev.mymadison.io/sponsors/1/members/2/role" accept-charset="UTF-8">
           <input name="_method" type="hidden" value="PUT">
@@ -54,5 +54,5 @@ sidebar: "sponsor_settings_sidebar.html"
 </table>
 <hr>
 
-<a href="{{ "/sponsors/members/add.html" | prepend: site.baseurl }}" class="btn btn-default">Add a User</a>
+<a href="{{ "/sponsors/members/add.html" | prepend: site.baseurl }}" class="btn btn-primary">Add a User</a>
 

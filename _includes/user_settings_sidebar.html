@@ -1,4 +1,5 @@
-
-<a href="{{ "/users/settings.html" | prepend: site.baseurl }}" class="list-group-item{% if page.path contains 'users/settings' %} active{% endif %}"> Settings</a>
-<a href="{{ "/users/password.html" | prepend: site.baseurl }}" class="list-group-item{% if page.path contains 'users/password' %} active{% endif %}"> Password</a>
-<a href="{{ "/users/notifications.html" | prepend: site.baseurl }}" class="list-group-item{% if page.path contains 'users/notifications' %} active{% endif %}"> Notifications</a>
+<div class="list-group">
+  <a href="{{ "/users/settings.html" | prepend: site.baseurl }}" class="list-group-item{% if page.path contains 'users/settings' %} active{% endif %}"> Settings</a>
+  <a href="{{ "/users/password.html" | prepend: site.baseurl }}" class="list-group-item{% if page.path contains 'users/password' %} active{% endif %}"> Password</a>
+  <a href="{{ "/users/notifications.html" | prepend: site.baseurl }}" class="list-group-item{% if page.path contains 'users/notifications' %} active{% endif %}"> Notifications</a>
+</div>
