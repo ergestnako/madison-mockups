@@ -44,12 +44,20 @@ sidebar: "admin_settings_sidebar.html"
   </tbody>
 </table>
 <hr>
-<form class="form-horizontal">
-  <div class="form-group">
-    <div class="input-group">
-      <input type="text" class="form-control typeahead" id="featured-doc-search" placeholder="Feature another document">
-      <span class="input-group-addon"><i class="fa fa-search" aria-hidden="true"></i></span>
+<form>
+  <div class="row">
+    <div class="col-sm-9">
+      <div class="form-group">
+        <div class="input-group">
+          <input type="text" class="form-control typeahead" id="featured-doc-search" placeholder="Feature another document">
+          <span class="input-group-addon"><i class="fa fa-search" aria-hidden="true"></i></span>
+        </div>
+      </div>
     </div>
+    <div class="col-sm-3">
+      <button type="submit" class="btn btn-primary">Add Featured Document</button>
+    </div>
+  </div>
 </form>
 <script>
 var docs = new Bloodhound({
