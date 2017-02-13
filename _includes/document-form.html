@@ -1,0 +1,41 @@
+<form method="POST" action="" accept-charset="UTF-8" enctype="multipart/form-data">
+  <input name="_method" type="hidden" value="PUT">
+  <input name="_token" type="hidden" value="0B6XmFvgtVVVLXR6tu9CPY5Vpw53RLtToUeQl8KA">
+  <div class="form-group">
+    <label for="title" class="control-label">Title</label>
+    <input type="text" class="form-control" name="title" value="{{ include.document.title }}" id="title">
+  </div>
+  <div class="form-group">
+    <label for="introtext" class="control-label">Introduction</label>
+    <textarea class="form-control" name="introtext" cols="50" rows="5   " id="introtext"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="featured-image" class="control-label">Featured Image</label>
+    <input type="file" class="" name="featured-image" id="featured-image">
+  </div>
+
+  {% if page.multi_content_blocks %}
+
+  <div class="form-group">
+    <label for="page_content" class="control-label">Page 1</label>
+    <textarea class="form-control" name="page_content" cols="50" rows="10" id="page_content">{{ include.document.content }}</textarea>
+  </div>
+  <div class="form-group">
+    <label for="page_content" class="control-label">Page 2</label>
+    <textarea class="form-control" name="page_content" cols="50" rows="10" id="page_content"></textarea>
+  </div>
+
+  {% else %}
+
+  <div class="form-group">
+    <label for="page_content" class="control-label">Content</label>
+    <textarea class="form-control" name="page_content" cols="50" rows="10" id="page_content">{{ include.document.content }}</textarea>
+  </div>
+
+  {% endif %}
+
+  <div class="document-pages-toolbar">
+    <a href="{{ "/users/sponsors/documents/new-2pages.html " | prepend: site.baseurl }}" class="btn btn-default pull-right">Add Page</a>
+  </div>
+  <a href="{{ "/users/sponsors/documents/edit.html " | prepend: site.baseurl }}" class="btn btn-primary">Save Document</a>
+</form>

@@ -1,0 +1,27 @@
+<div class="form-group">
+  <label for="publish_state" class="control-label">Publish State</label>
+  <select class="form-control" autocomplete="off" id="publish_state" name="publish_state">
+    <option value="published">Published</option>
+    <option value="unpublished" selected="selected">Unpublished</option>
+    <option value="private">Private</option>
+    <option value="deleted-admin">Deleted (by admin)</option>
+    <option value="deleted-user">Deleted (by user)</option>
+  </select>
+  <p class="help-block">If a document is set to &quot;unpublished&quot;, only sponsors can view it. If it is set to private, anyone with the link can view it. Otherwise it is publicly viewable.</p>
+</div>
+<div class="form-group">
+  <label for="discussion_state" class="control-label">Discussion State</label>
+  <select class="form-control" autocomplete="off" id="discussion_state" name="discussion_state">
+    <option value="open" selected="selected">Open</option>
+    <option value="closed">Closed</option>
+    <option value="hidden">Hidden</option>
+  </select>
+  <p class="help-block">If commenting is set to &quot;open&quot;, users will be able to comment and make notes normally. If it is &quot;closed&quot;, then existing comments will be viewable, but new comments can not happen. If it is set to &quot;hidden&quot;, no new commenting can happen, and existing comments will not be viewable.</p>
+</div>
+<div class="form-group">
+  <label for="category_id[]" class="control-label">Category</label>
+  <select class="form-control" autocomplete="off" multiple="1" id="category_id[]" name="category_id[]">
+    <option value="1">first category</option>
+    <option value="2">second category</option>
+  </select>
+</div>

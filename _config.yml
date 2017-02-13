@@ -3,7 +3,7 @@
 
 title: 'Madison'
 
-## note: 
+## note:
 #  use site.path in your templates to make it work for both protocols e.g. http and https
 #  use site.url only inside the web feed template (e.g. requires full url incl. protocol)
 baseurl: '/madison-mockups'
@@ -15,6 +15,26 @@ user:
   fullname: 'Jeff Longwell'
   email: 'jeff.longwell@wichita.gov'
   sponsorname: 'City of Wichita'
+
+document:
+  title: 'City of Wichita Open Data Policy'
+  intro: ''
+  content: |
+    WHEREAS, the City of Wichita (the "City") is committed to fostering an open, efficient, accountable, and accessible government; and
+
+    WHEREAS, timely and consistent publication of public information and data is an essential component of such governance; and
+
+    WHEREAS, the adoption of an open data policy will improve the provision of citizen services, enhance coordination and efficiency among and between City departments, divisions, and partner organizations, and increase opportunities for civic engagement and economic development; and
+
+    WHEREAS, making public data available online for reuse and consumption creates value for residents, government leaders, businesses, researchers, and the media, and facilitates the proactive provision of information currently sought through Freedom of Information Law requests; and
+
+    WHEREAS, an open data program is crucial to providing opportunity for all and improving the City's relationship with vulnerable communities; and
+
+    WHEREAS, information technologies, including web-based and other Internet applications and services, are an essential means for Open Government, and good government generally; and
+
+    WHEREAS, the protection of privacy, confidentiality and security will be maintained as a paramount priority while also advancing the government's transparency and accountability through open data.
+
+    NOW, THEREFORE, I, Jeff Longwell, Mayor of the City of Wichita, Kansas, by virtue of the executive and administrative authority vested in me by the Charter of the City of Wichita and the statutes and laws of the State of Kansas, do hereby direct and order open data be the law of the land.
 
 ########
 # more settings
