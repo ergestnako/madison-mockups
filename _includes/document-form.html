@@ -11,6 +11,13 @@
   </div>
   <div class="form-group">
     <label for="featured-image" class="control-label">Featured Image</label>
+    {% if include.document.img_url %}
+    <div class="row">
+      <div class="col-xs-9 col-sm-6">
+        <img src="{{ include.document.img_url }}" class="img-responsive" alt="Featured image">
+      </div>
+    </div>
+    {% endif %}
     <input type="file" class="" name="featured-image" id="featured-image">
   </div>
 
