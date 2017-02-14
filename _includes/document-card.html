@@ -1,0 +1,19 @@
+<div class="thumbnail">
+  <img src="{{ site.document.img_url }}" class="img-responsive" alt="Featured image">
+  <div class="caption">
+    <h4>{{ site.document.title }}</h4>
+    <p>{{ site.document.intro }}</p>
+
+    <div class="row">
+      <div class="col-md-4"><small class="text-muted">{{ site.document.sponsor }}</small></div>
+      <div class="col-md-4"><small class="text-muted">Jan 17, 2017</small></div>
+      <div class="col-md-4"><small class="text-muted">21 Comments</small></div>
+    </div>
+
+    <br>
+    <div class="text-right">
+      <a class="btn btn-link btn-sm" href="{{ "/users/sponsors/documents/edit.html" | prepend: site.baseurl }}">Edit</a>
+      <a href="#" class="btn btn-default btn-sm" role="button">Read this document</a>
+    </div>
+  </div>
+</div>

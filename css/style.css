@@ -5624,3 +5624,6 @@ button.close {
 
 a > i.fa {
   color: #333333; }
+
+.thumbnail {
+  padding: 0; }

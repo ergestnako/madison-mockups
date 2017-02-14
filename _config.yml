@@ -18,8 +18,9 @@ user:
 
 document:
   title: 'City of Wichita Open Data Policy'
-  intro: ''
+  intro: 'You are invited to join City of Wichita in crafting its first Open Data Policy.'
   img_url: 'https://documents.mymadison.io/img/default/default.jpg'
+  sponsor: 'City of Wichita'
   content: |
     WHEREAS, the City of Wichita (the "City") is committed to fostering an open, efficient, accountable, and accessible government; and
 
