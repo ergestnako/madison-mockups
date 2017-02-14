@@ -18,3 +18,17 @@
   </select>
   <p class="help-block">If commenting is set to &quot;open&quot;, users will be able to comment and make notes normally. If it is &quot;closed&quot;, then existing comments will be viewable, but new comments can not happen. If it is set to &quot;hidden&quot;, no new commenting can happen, and existing comments will not be viewable.</p>
 </div>
+
+{% if include.document %}
+<div class="form-group">
+  <label for="permalink">Permalink</label> <br>
+  <input class="form-control" type="text" placeholder="" value="{{ include.document.title | downcase | replace:' ','-'}}">
+  <p class="help-block">You can change the permalink of your document. It is strongly suggested that you not change this after you have published your document.</p>
+</div>
+
+<hr>
+<div class="form-group">
+  <label class="control-label">Downloads</label>
+  <button class="form-control btn btn-default">Download Comments</button>
+</div>
+{% endif %}
