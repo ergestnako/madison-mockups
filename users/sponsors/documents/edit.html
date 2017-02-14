@@ -1,11 +1,22 @@
 ---
 layout: default
 title:  'Edit | Document'
+breadcrumbs:
+  - name: Account
+    url: '/users/settings.html'
+  - name: Sponsors
+    url: '/users/sponsors/list.html'
+  - name: City of Wichita
+    url: '/users/sponsors/documents.html'
+  - name: Documents
+    url: '/users/sponsors/documents.html'
+  - name: City of Wichita Open Data Policy
+
 ---
 
 <div class="page-header">
   <h1>Edit Document</h1>
-</div>
+  {% include breadcrumbs.html %}</div>
 <div class="col-md-9">
 {% include document-form.html document=site.document%}
 </div>

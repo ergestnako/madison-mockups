@@ -2,11 +2,16 @@
 layout: default
 title:  'Sponsors'
 header:  'Sponsors'
+breadcrumbs:
+  - name: Account
+    url: '/users/settings.html'
+  - name: Sponsors
 ---
 
 
 <div class="page-header">
   <h1>{{page.header}}</h1>
+  {% include breadcrumbs.html %}
 </div>
 <div class="col-md-9">
   <table class="table">
@@ -46,7 +51,7 @@ header:  'Sponsors'
     <div class="panel-body">
       <h4><small>Need another sponsor?</small></h4>
       <p><small>It doesn't happen often, but some people need create more than one sponsor account. Don't worry, the process is the same.</small></p>
-      <a href="{{ "/sponsors/new.html" | prepend: site.baseurl }}" class="btn btn-default btn-xs">Create Another Sponsor</a>
+      <a href="{{ "/users/sponsors/new.html" | prepend: site.baseurl }}" class="btn btn-default btn-xs">Create Another Sponsor</a>
     </div>
   </div>
 </div>

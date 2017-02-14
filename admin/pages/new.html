@@ -3,6 +3,12 @@ layout: settings
 title: 'Custom Pages | Site Admin'
 header: 'Site Admin'
 sidebar: "admin_settings_sidebar.html"
+breadcrumbs:
+  - name: Admin
+    url: '/admin/settings.html'
+  - name: Pages
+    url: '/admin/pages.html'
+  - name: New
 ---
 
 <form method="POST" action="" accept-charset="UTF-8">
@@ -46,6 +52,6 @@ sidebar: "admin_settings_sidebar.html"
     </textarea>
   </div>
   <hr>
-  <button type="submit" class="btn btn-default">Submit</button>
+  <button type="submit" class="btn btn-primary">Save Page</button>
 </form>
 
