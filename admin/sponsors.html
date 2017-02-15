@@ -1,0 +1,42 @@
+---
+layout: settings
+title: 'Sponsors | Site Admin'
+header: 'Sponsors'
+sidebar: "admin_settings_sidebar.html"
+breadcrumbs:
+  - name: Admin
+    url: '/admin/settings.html'
+  - name: Sponsors
+---
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Created</th>
+      <th>Status</th>
+      <th>Members</th>
+      <th>Documents</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>City of Wichita</td>
+      <td>
+        <time datetime="2017-01-26T20:19:15+00:00" title="2017-01-26T20:19:15+00:00">
+          2017-01-26
+        </time>
+      </td>
+      <td>
+        <select class="form-control input-sm" autocomplete="off" id="statuses[]" name="statuses[]">
+          <option value="approved">Approved</option>
+          <option value="pending">Pending</option>
+        </select>
+      </td>
+      <td>3</td>
+      <td>1</td>
+      <td><a href="{{ " /users/sponsors/documents.html " | prepend: site.baseurl }}"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a></td>
+    </tr>
+  </tbody>
+</table>
