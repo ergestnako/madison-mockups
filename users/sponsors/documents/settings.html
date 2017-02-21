@@ -1,6 +1,8 @@
 ---
-layout: default
-title:  'Edit | Document'
+layout: settings-multi-col
+title:  'Settings | Document'
+header: 'Document Settings'
+sidebar: "document-settings-sidebar.html"
 breadcrumbs:
   - name: Account
     url: '/users/settings.html'
@@ -11,13 +13,11 @@ breadcrumbs:
   - name: Documents
     url: '/users/sponsors/documents.html'
   - name: City of Wichita Open Data Policy
-
+    url: '/users/sponsors/documents/settings.html'
+  - name: Settings
 ---
 
-<div class="page-header">
-  <h1>Edit Document</h1>
-  {% include breadcrumbs.html %}</div>
-<div class="col-md-9">
+<div class="col-md-6">
 {% include document-form.html document=site.document%}
 </div>
 <div class="col-md-3">
