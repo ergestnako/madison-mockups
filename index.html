@@ -38,7 +38,30 @@ title:  'Home'
       {% include document-card.html %}
     </div>
     <div class="col-md-4">
-      {% include document-card.html %}
+      <div class="thumbnail">
+        <img src="http://www.allcloud.io/wp-content/uploads/2017/01/default-thumbnail.jpg" class="img-responsive" alt="Featured image">
+        <div class="caption">
+          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit</h4>
+          <p>{{ "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum." | truncatewords: 20 }}</p>
+
+          <div class="row">
+            <div class="col-md-4"><small class="text-muted">{{ site.document.sponsor }}</small></div>
+            <div class="col-md-4"><small class="text-muted">Jan 17, 2017</small></div>
+            <div class="col-md-4"><small class="text-muted">21 Comments</small></div>
+          </div>
+
+          <br>
+          <div class="text-right">
+            <a class="btn btn-link btn-sm" href="{{ "/users/sponsors/documents/edit.html" | prepend: site.baseurl }}">Edit</a>
+            <a href="#" class="btn btn-default btn-sm" role="button">Read this document</a>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="col-md-4">
       {% include document-card.html %}

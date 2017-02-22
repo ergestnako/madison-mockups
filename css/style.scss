@@ -11,4 +11,13 @@ a > i.fa {
 
 .thumbnail {
   padding: 0;
+
+  img {
+    object-fit: cover;
+    height: 25rem;
+  }
+
+  img[class] {
+    width: 100%;
+  }
 }

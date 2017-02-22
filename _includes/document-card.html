@@ -1,13 +1,13 @@
 <div class="thumbnail">
-  <img src="{{ site.document.img_url }}" class="img-responsive" alt="Featured image">
+  <img src="https://unsplash.it/600/200/?random" class="img-responsive" alt="Featured image">
   <div class="caption">
     <h4>{{ site.document.title }}</h4>
-    <p>{{ site.document.intro }}</p>
+    <p>{{ site.document.intro | truncatewords: 20  }}</p>
 
-    <div class="row">
-      <div class="col-md-4"><small class="text-muted">{{ site.document.sponsor }}</small></div>
-      <div class="col-md-4"><small class="text-muted">Jan 17, 2017</small></div>
-      <div class="col-md-4"><small class="text-muted">21 Comments</small></div>
+    <div class="row text-center">
+      <div class="col-xs-4"><small class="text-muted">{{ site.document.sponsor }}</small></div>
+      <div class="col-xs-4"><small class="text-muted">Jan 17, 2017</small></div>
+      <div class="col-xs-4"><small class="text-muted">21 Comments</small></div>
     </div>
 
     <br>

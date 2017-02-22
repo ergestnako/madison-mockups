@@ -5627,3 +5627,8 @@ a > i.fa {
 
 .thumbnail {
   padding: 0; }
+  .thumbnail img {
+    object-fit: cover;
+    height: 25rem; }
+  .thumbnail img[class] {
+    width: 100%; }
