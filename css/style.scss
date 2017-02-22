@@ -12,6 +12,10 @@ a > i.fa {
 .thumbnail {
   padding: 0;
 
+  .intro {
+    min-height: 12rem;
+  }
+
   img {
     object-fit: cover;
     height: 25rem;

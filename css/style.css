@@ -5627,6 +5627,8 @@ a > i.fa {
 
 .thumbnail {
   padding: 0; }
+  .thumbnail .intro {
+    min-height: 12rem; }
   .thumbnail img {
     object-fit: cover;
     height: 25rem; }

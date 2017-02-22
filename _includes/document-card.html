@@ -1,8 +1,10 @@
 <div class="thumbnail">
   <img src="https://unsplash.it/600/200/?random" class="img-responsive" alt="Featured image">
   <div class="caption">
-    <h4>{{ site.document.title }}</h4>
-    <p>{{ site.document.intro | truncatewords: 20  }}</p>
+    <div class="intro">
+      <h4>{{ site.document.title }}</h4>
+      <p>{{ site.document.intro | truncatewords: 20  }}</p>
+    </div>
 
     <div class="row text-center">
       <div class="col-xs-4"><small class="text-muted">{{ site.document.sponsor }}</small></div>
