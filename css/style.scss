@@ -9,19 +9,59 @@ a > i.fa {
   color: $gray-dark;
 }
 
-.thumbnail {
+.doc-card, .doc-row {
   padding: 0;
-
-  .intro {
-    min-height: 12rem;
-  }
 
   img {
     object-fit: cover;
-    height: 25rem;
   }
 
   img[class] {
     width: 100%;
   }
+}
+
+.doc-card {
+  img {
+    height: 25rem;
+  }
+}
+
+.doc-row {
+  img {
+    height: 10rem;
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .doc-row {
+    .doc-details {
+      margin-top: 10px;
+    }
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  .doc-card {
+    .intro {
+      min-height: 12rem;
+    }
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
 }

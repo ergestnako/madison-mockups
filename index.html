@@ -38,11 +38,12 @@ title:  'Home'
       {% include document-card.html %}
     </div>
     <div class="col-md-4">
-      <div class="thumbnail">
+      <div class="thumbnail doc-card">
         <img src="http://www.allcloud.io/wp-content/uploads/2017/01/default-thumbnail.jpg" class="img-responsive" alt="Featured image">
         <div class="caption">
           <div class="intro">
-            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit</h4>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit<br><small class="text-muted">Sponsored by {{ site.document.sponsor }}</small></h4>
+
             <p>{{ "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -52,15 +53,15 @@ title:  'Home'
           </div>
 
           <div class="row">
-            <div class="col-md-4"><small class="text-muted">{{ site.document.sponsor }}</small></div>
-            <div class="col-md-4"><small class="text-muted">Jan 17, 2017</small></div>
-            <div class="col-md-4"><small class="text-muted">21 Comments</small></div>
+            <div class="col-sm-4"><small class="text-muted">Jan 17, 2017</small></div>
+            <div class="col-sm-8"><small class="text-muted">21 Comments</small></div>
           </div>
 
-          <br>
-          <div class="text-right">
-            <a class="btn btn-link btn-sm" href="{{ "/users/sponsors/documents/edit.html" | prepend: site.baseurl }}">Edit</a>
-            <a href="#" class="btn btn-default btn-sm" role="button">Read this document</a>
+          <div class="row">
+            <div class="col-md-12 text-right">
+              <a class="btn btn-link btn-sm" href="{{ "/users/sponsors/documents/edit.html" | prepend: site.baseurl }}">Edit</a>
+              <a href="#" class="btn btn-default btn-sm" role="button">Read this document</a>
+            </div>
           </div>
         </div>
       </div>
