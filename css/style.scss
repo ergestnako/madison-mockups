@@ -1,6 +1,8 @@
 // add bootstrap variable settings here
 
+@import "theme/variables";
 @import 'bootstrap';
+@import 'theme/style';
 
 
 // add more css stuff here
@@ -56,7 +58,7 @@ a > i.fa {
 @media only screen and (min-width : 992px) {
   .doc-card {
     .intro {
-      min-height: 12rem;
+      min-height: 14rem;
     }
   }
 }
