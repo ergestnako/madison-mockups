@@ -5896,6 +5896,17 @@ a > i.fa {
 .doc-row img {
   height: 10rem; }
 
+.popular.opinion {
+  min-height: 6.5rem;
+  margin: 1rem; }
+
+.no-margin {
+  margin: 0 !important; }
+
+.jumbotron .small, .jumbotron small,
+.jumbotron .small p, .jumbotron small p {
+  font-size: 1.5rem; }
+
 /* Custom, iPhone Retina */
 /* Extra Small Devices, Phones */
 /* Small Devices, Tablets */

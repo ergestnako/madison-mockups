@@ -35,6 +35,20 @@ a > i.fa {
   }
 }
 
+.popular.opinion {
+  min-height: 6.5rem;
+  margin: 1rem;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.jumbotron .small, .jumbotron small,
+.jumbotron .small p, .jumbotron small p {
+  font-size: 1.5rem;
+}
+
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
 
