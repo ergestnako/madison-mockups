@@ -13,7 +13,7 @@
   <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
 </head>
 
-<body>
+<body class="{% if page.bg-inverted %}inverted{% endif %}">
   <nav class="navbar navbar-default navbar-static-top">
     <div class="container">
       <div class="navbar-header">
@@ -70,7 +70,7 @@
       </div>
     </div>
   </nav>
-  <div class="container">
+  <div class="container{% if page.fluid %}-fluid{% endif %}">
     <div class="content">
       {{ content }}
     </div>
