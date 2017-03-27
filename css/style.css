@@ -5880,6 +5880,16 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
   .jumbotron .h1 {
     font-size: 52.5px; } }
 
+#show-more-btn {
+  display: none; }
+
+.show-less .document-content {
+  max-height: 2500px;
+  overflow: hidden; }
+
+.show-less #show-more-btn {
+  display: block; }
+
 a > i.fa {
   color: #7b8a8b; }
 

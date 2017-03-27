@@ -7,6 +7,21 @@
 
 // add more css stuff here
 
+#show-more-btn {
+  display: none;
+}
+
+.show-less {
+  .document-content {
+    max-height: 2500px;
+    overflow: hidden;
+  }
+
+  #show-more-btn {
+    display: block;
+  }
+}
+
 a > i.fa {
   color: $gray-dark;
 }
