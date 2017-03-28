@@ -5890,6 +5890,30 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
 .show-less #show-more-btn {
   display: block; }
 
+.opinion-form p {
+  padding-top: 1rem; }
+
+.opinion-form textarea {
+  margin: 1rem 0; }
+
+.opinion-form.opinion-form-closed .show-open {
+  display: none; }
+
+.opinion-form.opinion-form-closed .show-closed {
+  display: block; }
+
+.opinion-form.opinion-form-open .show-open {
+  display: block; }
+
+.opinion-form.opinion-form-open .show-closed {
+  display: none; }
+
+.avatar {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  margin-right: 1rem; }
+
 a > i.fa {
   color: #7b8a8b; }
 

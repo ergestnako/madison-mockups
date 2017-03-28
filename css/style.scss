@@ -13,6 +13,7 @@
 
 .show-less {
   .document-content {
+    // Arbitrary
     max-height: 2500px;
     overflow: hidden;
   }
@@ -20,6 +21,42 @@
   #show-more-btn {
     display: block;
   }
+}
+
+.opinion-form {
+  p {
+    padding-top: 1rem;
+  }
+
+  textarea {
+    margin: 1rem 0;
+  }
+}
+
+.opinion-form.opinion-form-closed {
+  .show-open {
+    display: none;
+  }
+  .show-closed {
+    display: block;
+  }
+}
+
+.opinion-form.opinion-form-open {
+  .show-open {
+    display: block;
+  }
+  .show-closed {
+    display: none;
+  }
+}
+
+
+.avatar {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  margin-right: 1rem;
 }
 
 a > i.fa {

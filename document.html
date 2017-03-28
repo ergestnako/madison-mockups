@@ -36,6 +36,21 @@ bg-inverted: false
     </div>
   </div>
   <div class="row">
+    <div style="position: absolute; right:20px; width: 200px;">
+      <p><em>TODO: Make comments work like this:</em></p>
+      <em>
+      <ul>
+        <li>Popups are now obsolete.</li>
+        <li>On highlight, +<i class="fa fa-comment" aria-hidden="true"></i> bubble appears in right margin.</li>
+        <li>Clicking +<i class="fa fa-comment" aria-hidden="true"></i> opens the panel with a comment form in the right margin.</li>
+        <li>Clicking on an existing highlight will open the panel to show the comment.</li>
+        <li>Posting a new opinion or replying to an existing opinion in the panel will mirror the comments below, with a comment textarea at the top and replies are hidden by default.</li>
+        <li>Users can write an opinion to an existing highlight in the panel and not be required to reply.</li>
+      </ul>
+      </em>
+    </div>
+
+
     <!-- Outline -->
     <div class="col-sm-3 col-md-2 panel">
         <p><em>TODO: affixed, nested (for length), and use scrollspy</em></p>
@@ -136,6 +151,13 @@ bg-inverted: false
     <!-- Content -->
     <div class="col-xs-11 col-sm-8 show-less">
       <div class="document-content">
+        <div class="pull-right">
+          <div><small>What do you think of this document?</small></div>
+          <a href="#" class="btn btn-primary btn-xs"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Support <small>(12)</small></a> <a href="#" class="btn btn-primary btn-xs"><i class="fa fa-thumbs-down" aria-hidden="true"></i> Oppose <small>(101)</small></a>
+        </div>
+
+
+
         <h1 id="heading-0" class="anchor">Office of Management and Budget</h1>
         <hr>
         <h1 id="heading-1" class="anchor">A Message from the President of the United States</h1>
@@ -1424,36 +1446,117 @@ bg-inverted: false
 
 
       </div>
-      <a id="show-more-btn" href="#" class="btn btn-default btn-block" onclick="showMore()">Read More</a>
+      <a id="show-more-btn" href="#" class="btn btn-link btn-block" onclick="showMore()">Read more...</a>
     </div>
   </div>
+
+  <hr>
+
+
   <!-- Support/Oppose, Opinions -->
-  <div class="row well">
-    <div id="comments" class="row">
-      <div class="col-md-offset-2 col-md-4">
-        <a href="#" class="btn btn-primary btn-block"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Support this document <small>(12)</small></a>
-        <div class="popular opinion">This is amazing. Let's all work together to make America great again!</div>
-        <div class="popular opinion">This is amazing. Let's all work together to make America great again!</div>
-        <div class="popular opinion">This is amazing. Let's all work together to make America great again!</div>
-      </div>
-      <div class="col-md-4">
-        <a href="#" class="btn btn-primary btn-block"><i class="fa fa-thumbs-down" aria-hidden="true"></i> Oppose this document <small>(101)</small></a>
-        <div class="popular opinion">I oppose the proposed budget changes for a number of reasons but I can't go through them all so here are my top three: 1) It will gut the EPA, an organization meant to keep pure and...</div>
-        <div class="popular opinion">I oppose the proposed budget changes for a number of reasons but I can't go through them all so here are my top three: 1) It will gut the EPA, an organization meant to keep pure and...</div>
-        <div class="popular opinion">I oppose the proposed budget changes for a number of reasons but I can't go through them all so here are my top three: 1) It will gut the EPA, an organization meant to keep pure and...</div>
-      </div>
+  <div class=row>
+    <div class="col-md-offset-3 col-md-8" style="padding-left: 0;">
+      <h4>Opinions</h4>
     </div>
-    <div class="row">
-      <div class="col-md-offset-2 col-md-8">
-        <a href="#" class="btn btn-default btn-block">See all opinions <small>(65)</small></a>
+  </div>
+
+  <div class=row>
+
+    <div class="col-md-offset-3 col-md-6 well  opinion-form opinion-form-closed">
+      <em>TODO: This should work like Medium.</em>
+      <div class="row">
+        <div class="col-sm-6 col-md-push-6 text-right">
+          <div><small>What do you think of this document?</small></div>
+          <a href="#" class="btn btn-primary btn-xs"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Support <small>(12)</small></a> <a href="#" class="btn btn-primary btn-xs"><i class="fa fa-thumbs-down" aria-hidden="true"></i> Oppose <small>(101)</small></a>
+        </div>
+
+
+        <div class="col-sm-6 col-md-pull-6">
+          <img src="https://www.1plusx.com//app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png" alt="User" class="img-rounded avatar pull-left">
+
+          <p id="open-opinion-form" class="show-closed text-muted">Write an opinion...</p>
+          <p class="show-open">{{ site.user.fullname }}</p>
+        </div>
+      </div>
+
+      <div class="show-open">
+        <textarea id="opinion-form-textarea" class="form-control" rows="3"></textarea>
+        <a href="#" class="btn btn-primary btn-sm">Publish</a>
       </div>
     </div>
   </div>
+
+
+  <div class="row">
+    <div class="col-md-offset-3 col-md-6 well">
+      <div class="row">
+        <div class="col-sm-6 col-md-push-6 text-right">
+          <a href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-flag" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="col-sm-6 col-md-pull-6">
+          <img src="https://www.1plusx.com//app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png" alt="User" class="img-rounded avatar pull-left">
+          <p>Jane Smith<br><small class="text-muted">Mar 26</small></p>
+        </div>
+      </div>
+
+      <em>TODO: this should anchor link to this line in the document.</em>
+      <blockquote><a href="#">"significantly increases the budget for immigration enforcement at the Department of Justice and the Department of Homeland Security"</a></blockquote>
+
+      <p>I am opposed to this ramp up of round-up and deport activity by ICE. I grew up in So. Cal. and worked as a bilingual teacher for many years. The devastation of rounding up hard working immigrants and deporting them is truly awful. These people pay taxes, work in jobs that no American would want, and often work in bad conditions. Let's work for immigration reform, but give these people a path to citizenship. Our nation is great because of immigrants.</p>
+
+
+      <a href="#" class="btn btn-link btn-block">See replies <small>(4)</small></a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-offset-3 col-md-6 well">
+      <div class="row">
+        <div class="col-sm-6 col-md-push-6 text-right">
+          <a href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-flag" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="col-sm-6 col-md-pull-6">
+          <img src="https://www.1plusx.com//app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png" alt="User" class="img-rounded avatar pull-left">
+          <p>{{ site.user.fullname }}<br><small class="text-muted">Mar 26</small></p>
+        </div>
+      </div>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+      <a href="#" class="btn btn-link btn-block">Reply to this opinion</a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-offset-3 col-md-6">
+      <a href="#" class="btn btn-link btn-block">See all opinions <small>(65)</small></a>
+    </div>
+  </div>
+
 </div>
 
 <script>
   document.getElementById('show-more-btn').onclick = function(evt) {
     evt.preventDefault();
     document.getElementsByClassName('show-less')[0].classList.remove('show-less');
+  }
+
+  document.getElementById('open-opinion-form').onclick = function(evt) {
+    evt.preventDefault();
+    document.getElementsByClassName('opinion-form')[0].classList.remove('opinion-form-closed')
+    document.getElementsByClassName('opinion-form')[0].classList.add('opinion-form-open');
+    document.getElementById('opinion-form-textarea').focus();
   }
 </script>
