@@ -64,10 +64,9 @@ a > i.fa {
 }
 
 .doc-card, .doc-row {
-  padding: 0;
-
   img {
     object-fit: cover;
+    height: 20rem;
   }
 
   img[class] {
@@ -75,21 +74,8 @@ a > i.fa {
   }
 }
 
-.doc-card {
-  img {
-    height: 25rem;
-  }
-}
-
 .doc-row {
-  img {
-    height: 10rem;
-  }
-}
-
-.popular.opinion {
-  min-height: 6.5rem;
-  margin: 1rem;
+  margin-top: 2rem;
 }
 
 .no-margin {
@@ -105,24 +91,6 @@ a > i.fa {
   font-size: 1.5rem;
 }
 
-body.inverted {
-  background-color: $gray-lighter;
-}
-
-.paper {
-  padding: 20px;
-
-  border-width: 1px;
-  border-style: solid;
-  border-color: #959595;
-
-  background-color: #FFFFFF;
-
-  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.03);
-  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.03);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), inset 0 0 10px rgba(0, 0, 0, 0.03);
-}
-
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
 
@@ -135,11 +103,6 @@ body.inverted {
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-  .doc-row {
-    .doc-details {
-      margin-top: 10px;
-    }
-  }
 }
 
 /* Medium Devices, Desktops */
@@ -147,6 +110,16 @@ body.inverted {
   .doc-card {
     .intro {
       min-height: 14rem;
+    }
+  }
+
+  .doc-row {
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid $gray-lighter;
+
+    img {
+      height: 8rem;
     }
   }
 }

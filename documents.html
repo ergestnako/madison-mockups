@@ -7,32 +7,31 @@ title:  'Documents'
 
 {% include document-row.html %}
 
-<div class="row doc-row thumbnail">
+
+<div class="row doc-row">
   <div class="col-sm-2">
     <img src="http://www.allcloud.io/wp-content/uploads/2017/01/default-thumbnail.jpg" class="img-responsive" alt="Featured image">
   </div>
 
-  <div class="col-sm-6">
+  <div class="col-sm-4">
     <div class="intro">
-      <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit<br><small class="text-muted">Sponsored by {{ site.document.sponsor }}</small></h4>
-      <p>{{ "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum." | truncatewords: 20 }}</p>
+      <h4>America First-A Budget Blueprint to Make America Great Again<br><small class="text-muted">Shared for feedback by Congressman Seth Moulton</small></h4>
     </div>
   </div>
 
   <div class="col-sm-4">
-    <div class="row doc-details">
-      <div class="col-sm-12"><small class="text-muted">Jan 17, 2017</small></div>
-      <div class="col-sm-12"><small class="text-muted">21 Comments</small></div>
-    </div>
+    <p>{{ "I'm Congressman Seth Moulton, and I want to hear your thoughts on President Trump's budget blueprint here in Madison. I want to hear directly from you about how the President's budget impacts you, your family, your business, and your ability to achieve the American dream.
 
+A budget shows what we care about. It shows our values. As Americans, we care about creating good paying jobs so that everyone who works hard gets a shot at the American Dream. And we care about national security: our most solemn obligation is to keep Americans safe at home and abroad." | truncatewords: 20  }}</p>
+  </div>
+
+  <div class="col-sm-2">
     <div class="row">
-      <div class="col-md-12 text-right">
-        <a class="btn btn-link btn-sm" href="{{ "/users/sponsors/documents/settings.html" | prepend: site.baseurl }}">Edit</a>
+      <div class="col-xs-6 col-md-12"><small class="text-muted">Jan 17, 2017</small><br>
+      <small class="text-muted">21 Comments</small></div>
+
+      <div class="col-xs-6 col-md-12">
+        <a href="{{ "/document.html" | prepend: site.baseurl }}" class="btn btn-default btn-xs" role="button">Read this document</a>
       </div>
     </div>
   </div>
