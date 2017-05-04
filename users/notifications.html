@@ -9,21 +9,31 @@ breadcrumbs:
   - name: Notifications
 ---
 
-<form>
+<form class="form-horizontal">
   <div class="panel panel-default">
     <div class="panel-heading">
       <h3 class="panel-title">User Notifications</h3>
     </div>
     <div class="panel-body">
-      <div class="checkbox">
-        <label>
-          <input name="madison.comment.replied" type="checkbox" checked> When someone replies to your comment
-        </label>
+      <div class="form-group">
+        <label class="col-sm-6 control-label">When someone replies to your comment</label>
+        <div class="col-sm-4">
+          <select class="form-control">
+            <option>Immediately</option>
+            <option>Daily</option>
+            <option>Never</option>
+          </select>
+        </div>
       </div>
-      <div class="checkbox">
-        <label>
-          <input name="madison.comment.replied" type="checkbox" checked> When new documents are published
-        </label>
+      <div class="form-group">
+        <label class="col-sm-6 control-label">When new documents are published</label>
+        <div class="col-sm-4">
+          <select class="form-control">
+            <option>Immediately</option>
+            <option selected>Daily</option>
+            <option>Never</option>
+          </select>
+        </div>
       </div>
     </div>
   </div>
@@ -32,20 +42,35 @@ breadcrumbs:
       <h3 class="panel-title">{{ site.user.sponsorname }} Notifications</h3>
     </div>
     <div class="panel-body">
-      <div class="checkbox">
-        <label>
-          <input name="madison.comment.replied" type="checkbox" checked> When someone comments on your document
-        </label>
+      <div class="form-group">
+        <label class="col-sm-6 control-label">When someone comments on your document</label>
+        <div class="col-sm-4">
+          <select class="form-control">
+            <option>Immediately</option>
+            <option selected>Daily</option>
+            <option>Never</option>
+          </select>
+        </div>
       </div>
-      <div class="checkbox">
-        <label>
-          <input name="madison.comment.replied" type="checkbox" checked> When someone supports or opposes your document
-        </label>
+      <div class="form-group">
+        <label class="col-sm-6 control-label">When someone supports or opposes your document</label>
+        <div class="col-sm-4">
+          <select class="form-control">
+            <option>Immediately</option>
+            <option selected>Daily</option>
+            <option>Never</option>
+          </select>
+        </div>
       </div>
-      <div class="checkbox">
-        <label>
-          <input name="madison.comment.replied" type="checkbox" checked> When someone flags an inappropriate comment your document
-        </label>
+      <div class="form-group">
+        <label class="col-sm-6 control-label">When someone flags an inappropriate comment your document</label>
+        <div class="col-sm-4">
+          <select class="form-control">
+            <option>Immediately</option>
+            <option selected>Daily</option>
+            <option>Never</option>
+          </select>
+        </div>
       </div>
     </div>
   </div>
@@ -54,10 +79,15 @@ breadcrumbs:
       <h3 class="panel-title">Admin Notifications</h3>
     </div>
     <div class="panel-body">
-      <div class="checkbox">
-        <label>
-          <input name="madison.comment.replied" type="checkbox" checked> When a sponsor needs approval
-        </label>
+      <div class="form-group">
+        <label class="col-sm-6 control-label">When a sponsor needs approval</label>
+        <div class="col-sm-4">
+          <select class="form-control">
+            <option>Immediately</option>
+            <option selected>Daily</option>
+            <option>Never</option>
+          </select>
+        </div>
       </div>
     </div>
   </div>
